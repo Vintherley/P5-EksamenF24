@@ -1,0 +1,23 @@
+:root{
+    --background-color:#;
+    --txt-color:#000000;
+    --txt-color-2:white;
+    --main-color:#3DCD58;
+    --only-logo-color:#009530;
+    --support-color-1:#626469;
+    --support-color-2:#9FA0A4;
+    --font-family:"Nunito", sans-serif;
+
+}
+/*mobile*/
+@media (max-width: 699px) {
+
+}
+/*tablet*/
+@media (min-width:700px){
+
+}
+/*desktop*/
+@media (min-width:900px){
+    
+}
