@@ -11,6 +11,32 @@
 }
 /*mobile*/
 @media (max-width: 699px) {
+.logo{
+    width: 10px;
+    border-radius: 9999999;
+}
+.nyher{
+    font-family: var(--font-family);
+    color: var(--txt-color);
+}
+.opretbruger{
+    background-color: var(--main-color);
+    padding: 10px;
+    text-decoration: none;
+    color: var(--txt-color-2);
+    border-radius: 8px;
+}
+.bruger{
+    font-family: var(--font-family);
+    color: var(--txt-color);
+}
+.login{
+    text-decoration: none;
+    background-color: var(--main-color);
+    color: var(--txt-color-2);
+    padding: 10px;
+    border-radius: 8px;
+}
 
 }
 /*tablet*/
@@ -19,5 +45,5 @@
 }
 /*desktop*/
 @media (min-width:900px){
-    
+
 }
