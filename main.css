@@ -45,5 +45,22 @@
 }
 /*desktop*/
 @media (min-width:900px){
-
+.navbar{
+    background-color: #626469;
+}
+.nav-ul{
+    list-style: none;
+    text-decoration: none;
+    color:var(--txt-color)
+}
+a{
+    text-decoration: none;
+    color: var(--txt-color);
+}
+.downloade-btn{
+    background-color: #626469;
+    color: var(--txt-color);
+    padding: 10px;
+    font-family: var(--font-family);
+}
 }
