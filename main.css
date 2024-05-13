@@ -1,3 +1,7 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
 :root{
     --background-color:#;
     --txt-color:#000000;
@@ -7,6 +11,8 @@
     --support-color-1:#626469;
     --support-color-2:#9FA0A4;
     --font-family:"Nunito", sans-serif;
+
+    --lofi:#626469;
 
 }
 /*mobile*/
@@ -37,7 +43,60 @@
     padding: 10px;
     border-radius: 8px;
 }
+/*forside logget ind*/
+.navbar-bund {
+    background-color: var(--lofi);
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 5;
+}
 
+.bund-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* Juster indholdet jævnt langs vandret akse */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-a {
+    text-decoration: none;
+    color: var(--txt-color);
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* To kolonner */
+    gap: 10px; /* Afstand mellem bokse */
+}
+
+.column {
+    display: grid;
+    grid-template-rows: repeat(4, auto); /* Fire rækker */
+    gap: 10px; /* Afstand mellem bokse */
+}
+
+.box {
+    background-color: var(--lofi);
+    padding: 20px;
+    height: 50px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.box img {
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 10px;
+}
+
+.box a {
+    text-decoration: none;
+    color: var(--txt-color);
+}
 }
 /*tablet*/
 @media (min-width:700px){
@@ -45,8 +104,9 @@
 }
 /*desktop*/
 @media (min-width:900px){
+    /*downloade side*/
 .navbar{
-    background-color: #626469;
+    background-color: var(--lofi);
 }
 .nav-ul{
     list-style: none;
@@ -58,7 +118,7 @@ a{
     color: var(--txt-color);
 }
 .downloade-btn{
-    background-color: #626469;
+    background-color: var(--lofi);
     color: var(--txt-color);
     padding: 10px;
     font-family: var(--font-family);
