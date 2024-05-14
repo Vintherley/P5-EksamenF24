@@ -66,6 +66,7 @@ body{
     text-decoration: none;
     color: var(--txt-color);
 }
+/*bokse*/
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* To kolonner */
@@ -81,7 +82,7 @@ body{
 .box {
     background-color: var(--lofi);
     padding: 20px;
-    height: 50px;
+    height: 50px;/*størrelsen på kasserne*/
     border-radius: 8px;
     display: flex;
     align-items: center;
