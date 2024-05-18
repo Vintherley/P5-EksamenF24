@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
+    font-family: var(--font-family);
 }
 :root{
     --background-color:#;
@@ -21,31 +22,48 @@ body{
 }
 /*mobile*/
 @media (max-width: 699px) {
-.logo{
-    width: 10px;
-    border-radius: 9999999;
+    .logo {
+        width: 10px;
+        border-radius: 9999999;
+    }
+    
+    .nyher {
+        font-family: var(--font-family);
+        color: var(--txt-color);
+    }
+    
+    .opretbruger-btn {
+        background-color: var(--main-color);
+        padding: 10px;
+        text-decoration: none;
+        color: var(--txt-color-2);
+        border-radius: 8px;
+        display: flex;
+    }
+    
+    .login-btn {
+        text-decoration: none;
+        background-color: var(--main-color);
+        color: var(--txt-color-2);
+        padding: 10px;
+        border-radius: 8px;
+        display: flex;
+    }
+/*index html til desktop*/
+.navbar{
+   display: none;
 }
-.nyher{
-    font-family: var(--font-family);
-    color: var(--txt-color);
+.nav-ul{
+    display: none;
 }
-.opretbruger{
-    background-color: var(--main-color);
-    padding: 10px;
-    text-decoration: none;
-    color: var(--txt-color-2);
-    border-radius: 8px;
+a{
+    display: none;
 }
-.bruger{
-    font-family: var(--font-family);
-    color: var(--txt-color);
+.downloade-btn{
+    display: none;
 }
-.login{
-    text-decoration: none;
-    background-color: var(--main-color);
-    color: var(--txt-color-2);
-    padding: 10px;
-    border-radius: 8px;
+.desktop{
+    display: none;
 }
 /*forside logget ind*/
 .navbar-bund {
@@ -72,31 +90,37 @@ body{
     text-decoration: none;
     color: var(--txt-color);
 }
+
+.icon{
+    display: flex;
+    
+}
 /*bokse*/
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* To kolonner */
+    margin: 10px;
     gap: 10px; /* Afstand mellem bokse */
 }
 
 .column {
     display: grid;
     grid-template-rows: repeat(4, auto); /* Fire rækker */
-    gap: 10px; /* Afstand mellem bokse */
+    gap: 20px; /* Afstand mellem bokse */
 }
 
 .box {
     background-color: var(--main-color);
     padding: 20px;
-    height: 50px;/*størrelsen på kasserne*/
-    border-radius: 8px;
+    height: 30px;/*størrelsen på kasserne*/
+    border-radius: 10px;
     display: flex;
     align-items: center;
 }
 
 .box img {
     max-width: 40px;
-    max-height: 40px;
+    max-height: 30px;
     margin-right: 10px;
 }
 
@@ -104,6 +128,14 @@ body{
     text-decoration: none;
     color: var(--txt-color-2);
 }
+.icon-box{
+    display: flex;
+    flex-direction: column;
+}
+}
+
+
+
 
 /*Opret bruger- Louise*/
 
@@ -113,7 +145,7 @@ body{
 
 /*chat-Tanja*/
 
-}
+
 /*tablet*/
 @media (min-width:700px){
 
@@ -121,22 +153,36 @@ body{
 /*desktop*/
 @media (min-width:900px){
     /*downloade side*/
-.navbar{
-    background-color: var(--lofi);
-}
-.nav-ul{
-    list-style: none;
-    text-decoration: none;
-    color:var(--txt-color)
-}
-a{
-    text-decoration: none;
-    color: var(--txt-color);
-}
-.downloade-btn{
-    background-color: var(--lofi);
-    color: var(--txt-color);
-    padding: 10px;
-    font-family: var(--font-family);
+    .navbar {
+        background-color: var(--main-color);
+    }
+    
+    .nav-ul {
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+
+    }
+    
+    a {
+        text-decoration: none;
+        color: var(--txt-color-2);
+        
+    }
+    
+    .downloade-btn {
+        background-color: var(--main-color);
+        color: var(--txt-color-2);
+        padding: 10px;
+        font-family: var(--font-family);
+    }
+    /*html til mobile*/
+.logo,
+.nyher,
+.opretbruger-btn,
+.login-btn {
+    display: none;
 }
 }
