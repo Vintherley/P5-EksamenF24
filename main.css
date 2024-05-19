@@ -163,6 +163,7 @@ a{
         background-color: var(--txt-color-2);
         border-bottom: 3px var(--main-color);
         max-width: 100vh;
+        border-bottom: 3px solid var(--main-color);
 
         
       
