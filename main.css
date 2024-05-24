@@ -26,473 +26,353 @@ body{
 
 /*mobile*/
 @media (max-width: 600px) {
-    /*opret bruger*/
-    .navbar-top-opret {
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 20px;
-        background-color: var(--main-color);
-    }
-    
-    .left-content {
-        display: flex;
-        align-items: center;
-    }
-    
-    .topbar {
-        height: 20px; /* Juster størrelsen efter behov */
-        top: 5px;
-    }
-    
-    .top-nav p {
-        font-size: 1rem; /* Juster størrelsen efter behov */
-        color: var(--main-color);
-        padding: 5px 5px 0 5px;
-    }
-    
-    .tilbage {
-        height: 15px; /* Juster størrelsen efter behov */
-        z-index: 5;
-    }
-    /* Opret bruger - Louise */
-    .bruger, .email, .kodeord {
-        background-color: var(--txt-color-2);
-        padding: 5px;
-        width: 300px;
-        height: 30px;
-        border-radius: 9999px;
-        border: 2px solid #D0D0D0;
-        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
-        margin: 0 25px;
-    }
-    
-    .em {
-        font-family: var(--font-family);
-        border: none;
-        margin: 10px 20px;
-    }
-    
-    .brugernavn, .opk, .p-checkbox {
-        font-family: var(--font-family);
-        margin: 10px 25px;
-    }
-    
-    .opret-bruger-med {
-        margin: 10px 80px;
-    }
-    
-    .checkbox {
-        height: 20px;
-        width: 20px;
-    }
-    
-    .checkbox-container {
-        display: flex;
-        align-items: center;
-        margin: 10px 25px;
-    }
-    
-    .p-checkbox {
-        margin: 0;
-        margin-right: 10px;
+        /*nav bar til bunden af appen*/
+        .navbar-bund {
+            background-color: var(--txt-color-2);
+            color: var(--support-color-1);
+            border-top: 3px solid var(--main-color);
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 5;
+        }
         
-    }
+        .bund-nav {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav-a {
+            text-decoration: none;
+            color: var(--txt-color);
+        }
+        
+        .icon {
+            display: flex;
+        }
+        /*nav bar til bunde af appen slut*/
     
-    .opet-btn {
-        background-color: var(--main-color);
-        font-family: var(--font-family);
-        color: var(--txt-color-2);
-        height: 40px;
-        width: 200px;
-        border-radius: 9999px;
-        border: 1px solid #D0D0D0;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        margin: 30px 70px;
-    }
+        /*Navbar til toppen af appen*/
+        .navbar-top {
+            display: flex;
+            height: 55px; /* Sætter højden til 30px */
+            justify-content: space-between; /* Placerer elementer yderst til venstre og højre */
+            align-items: center; /* Centrerer elementer lodret */
+            border-bottom: 1px solid var(--main-color);
+            padding: 0 20px; /* Tilføjer lidt indvendig afstand */
+        }
+        
+        .top-nav {
+            display: flex;
+            align-items: center;
+            flex-grow: 1; /* Sørger for, at .top-nav fylder tilgængelig plads */
+        }
+        
+        .logo-left {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-left img {
+            display: block;
+            margin-right: 10px; /* Tilføjer afstand mellem logo og tekst */
+            height: 20px; /* Tilføjer en højde til logoet for at passe indenfor navbar-højden */
+        }
+        
+        .logo-txt {
+            text-decoration: none;
+            color: var(--main-color); /* Tilføjer farve til teksten */
+            font-weight: bold; /* Tilføjer fed skrift */
+            font-size: 16px; /* Justerer skriftstørrelsen for at passe indenfor navbar-højden */
+        }
+        
+        .topbar1, .tilbage {
+            margin-left: 50px; /* Tilføjer afstand mellem ikoner */
+            height: 20px; /* Tilføjer en højde til ikonerne for at passe indenfor navbar-højden */
+        }
+        
+        .tilbage {
+            margin-left: 70px; /* Flytter tilbagepil til højre side */
+        }
+        /*Navbar til toppen af appen slut*/
+        .navn-e{ 
+            font-size: 65px; 
+            margin: 0; 
+            color: var(--support-color-1); 
+        } 
     
-    .opretside {
-        display: flex;
-        background-color: var(--txt-color-2);
-        padding: 5px;
-        width: 300px;
-        height: 30px;
-        border-radius: 9999px;
-        border: 2px solid #D0D0D0;
-        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
-        text-decoration: none;
-        font-family: var(--font-family);
-        color: var(--main-color);
-        margin: 25px;
-        gap: 100px;
-    }
+        .Velkommen-index{ 
+            color: var(--support-color-1); 
+        } 
+         
+        .container { 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            height: 100vh; /* Fuld højde af viewporten */ 
     
-    .google {
-        height: 25px;
-        width: 25px;
+        } 
+         
+    
+        .nyher { 
+            font-family: var(--font-family); 
+            color: var(--txt-color); 
+            margin-bottom: 20px; /* Juster efter behov */ 
+        } 
+    
+         
+    
+        .opretbruger-btn, .login-btn { 
+            width: 200px; 
+            height: 30px; 
+            border-radius: 23px; 
+            text-align: center; 
+            display: block; 
+            text-decoration: none; 
+            margin: 10px; 
+        } 
+        
+        .opretbruger-btn { 
+            border: 2px solid #3DCD58; 
+            background: #FFF; 
+            color: var(--main-color); 
+            box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25); 
+        } 
+         
+        .login-btn { 
+            background-color: var(--main-color); 
+            color: var(--txt-color-2); 
+            padding: 10px; 
+        } 
        
-    }
-/*opret bruger slut*/
-
-
-    .navbar-top-opret {
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 20px;
-    background-color: var(--main-color);
-}
-
-.left-content {
-    display: flex;
-    align-items: center;
-}
-
-.topbar {
-    height: 20px; /* Juster størrelsen efter behov */
-    top: 5px;
-}
-
-.top-nav p {
-    font-size: 1rem; /* Juster størrelsen efter behov */
-    color: var(--main-color);
-    padding: 5px 5px 0 5px;
-}
-
-.tilbage {
-    height: 15px; /* Juster størrelsen efter behov */
-    z-index: 5;
-}
-/* Opret bruger - Louise */
-.bruger, .email, .kodeord {
-    background-color: var(--txt-color-2);
-    padding: 5px;
-    width: 300px;
-    height: 30px;
-    border-radius: 9999px;
-    border: 2px solid #D0D0D0;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    margin: 0 25px;
-}
-
-.em {
-    font-family: var(--font-family);
-    border: none;
-    margin: 10px 20px;
-}
-
-.brugernavn, .opk, .p-checkbox {
-    font-family: var(--font-family);
-    margin: 10px 25px;
-}
-
-.opret-bruger-med {
-    margin: 10px 80px;
-}
-
-.checkbox {
-    height: 20px;
-    width: 20px;
-}
-
-.checkbox-container {
-    display: flex;
-    align-items: center;
-    margin: 10px 25px;
-}
-
-.p-checkbox {
-    margin: 0;
-    margin-right: 10px;
+        .allerede-bruger { 
+            display: block; 
+            margin-bottom: 10px; /* Juster efter behov */ 
+            color: var(--support-color-1); 
+        } 
     
-}
-
-.opet-btn {
-    background-color: var(--main-color);
-    font-family: var(--font-family);
-    color: var(--txt-color-2);
-    height: 40px;
-    width: 200px;
-    border-radius: 9999px;
-    border: 1px solid #D0D0D0;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    margin: 30px 70px;
-}
-
-.opretside {
-    display: flex;
-    background-color: var(--txt-color-2);
-    padding: 5px;
-    width: 300px;
-    height: 30px;
-    border-radius: 9999px;
-    border: 2px solid #D0D0D0;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    text-decoration: none;
-    font-family: var(--font-family);
-    color: var(--main-color);
-    margin: 25px;
-    gap: 100px;
-}
-
-.google {
-    height: 25px;
-    width: 25px;
-   
-}
-    .navbar-top-opret {
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 20px;
-        background-color: var(--main-color);
-    }
-
-    .left-content {
+         
+        
+        .logo { 
+            width: 176px; 
+            height: 176px; 
+            border-radius: 9999999; 
+            margin-bottom: 20px; /* Juster efter behov */ 
+        } 
+    
+        .navbar,  
+        .nav-ul, .nav-ul a, .nav-ul li, .container-index { 
+            display: none; 
+        } 
+    
+    /* Opret bruger*/ 
+    
+    .body {
         display: flex;
+        flex-direction: column;
         align-items: center;
+        background-color: var(--background-color);
     }
-
-    .topbar {
-        height: 20px; /* Juster størrelsen efter behov */
-        top: 5px;
-    }
-
-    .top-nav p {
-        font-size: 1rem; /* Juster størrelsen efter behov */
-        color: var(--main-color);
-        padding: 5px 5px 0 5px;
-    }
-
-    .tilbage {
-        height: 15px; /* Juster størrelsen efter behov */
-        z-index: 5;
+    .navbar-top-opret { 
+            flex-direction: row; 
+            justify-content: space-around; 
+            padding: 20px; 
+            background-color: var(--main-color); 
+        } 
+        
+        .left-content { 
+            display: flex; 
+            align-items: center; 
+        } 
+      
+        .topbar { 
+            height: 20px; /* Juster størrelsen efter behov */ 
+            top: 5px; 
+        } 
+    
+         
+    
+        .top-nav p { 
+            font-size: 1rem; /* Juster størrelsen efter behov */ 
+            color: var(--main-color); 
+            padding: 5px 5px 0 5px; 
+    
+        } 
+    
+         
+    
+        .tilbage { 
+            height: 15px; /* Juster størrelsen efter behov */ 
+            z-index: 5; 
+        } 
+    
+        /* Opret bruger - Louise */ 
+    
+        .bruger, .email, .kodeord { 
+            background-color: var(--txt-color-2); 
+            padding: 5px; 
+            width: 300px; 
+            height: 30px; 
+            border-radius: 9999px; 
+            border: 2px solid #D0D0D0; 
+            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset; 
+            margin: 0 25px; 
+        } 
+    
+         
+    
+        .em { 
+            font-family: var(--font-family); 
+            border: none; 
+            margin: 10px 20px; 
+    
+        } 
+         
+        .brugernavn, .opk, .p-checkbox { 
+            font-family: var(--font-family); 
+            margin: 10px 25px; 
+    
+        } 
+         
+        .opret-bruger-med { 
+            margin: 10px 80px; 
+    
+        } 
+         
+        .checkbox { 
+            height: 20px; 
+            width: 20px; 
+    
+        } 
+        
+        .checkbox-container { 
+            display: flex; 
+            align-items: center; 
+            margin: 10px 25px; 
+    
+        } 
+         
+        .p-checkbox { 
+            margin: 0; 
+            margin-right: 10px; 
+            
+        } 
+    
+        .opet-btn { 
+            background-color: var(--main-color); 
+            font-family: var(--font-family); 
+            color: var(--txt-color-2); 
+            height: 40px; 
+            width: 200px; 
+            border-radius: 9999px; 
+            border: 1px solid #D0D0D0; 
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+            margin: 30px 70px; 
+    
+        } 
+    
+        .opretside { 
+            display: flex; 
+            background-color: var(--txt-color-2); 
+            padding: 5px; 
+            width: 300px; 
+            height: 30px; 
+            border-radius: 9999px; 
+            border: 2px solid #D0D0D0; 
+            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset; 
+            text-decoration: none; 
+            font-family: var(--font-family); 
+            color: var(--main-color); 
+            margin: 25px; 
+            gap: 100px; 
+        } 
+      
+        .google { 
+            height: 25px; 
+            width: 25px; 
+        
+        } 
+    
+    /*Log ind*/ 
+    
+    .brn-em, .kodeord{ 
+        background-color: var(--txt-color-2);  
+        padding: 5px;  
+        width: 300px;  
+        height: 30px;  
+        border-radius: 9999px;  
+        border: 2px solid #D0D0D0;  
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;  
+        margin: 0 25px;  
+    } 
+    /*installation*/
+    .installation-container {
+        display: flex;
+        flex-direction: column; /* Arrangerer elementer i en kolonne */
+        align-items: center; /* Centrerer elementer vandret */
+        justify-content: center; /* Centrerer elementer lodret */
+        text-align: center; /* Centrerer tekst */
+        height: calc(100vh - 30px); /* Fylder hele højden af viewporten minus navbarens højde */
+        gap: 20px; /* Tilføjer afstand mellem elementerne */
+        margin: 0; /* Fjerner margin */
+        padding: 0; /* Fjerner padding */
     }
     
-
-
-/* Log ind (index) - Shirley */
-.logo {
-    width: 10px;
-    border-radius: 9999999;
-}
-
-.nyher {
-    font-family: var(--font-family);
-    color: var(--txt-color);
-}
-
-.opretbruger-btn {
-    background-color: var(--main-color);
-    padding: 10px;
-    text-decoration: none;
-    color: var(--txt-color-2);
-    border-radius: 8px;
-    display: flex;
-}
-
-.login-btn {
-    text-decoration: none;
-    background-color: var(--main-color);
-    color: var(--txt-color-2);
-    padding: 10px;
-    border-radius: 8px;
-    display: flex;
-}
-
-/* Index HTML til desktop */
-.navbar, .nav-ul, a, .downloade-btn, .desktop, .desktop-txt, .desktop-txt-1, .desktop-img {
-    display: none;
-}
-
-/* Forside logget ind */
-.navbar-bund {
-    background-color: var(--txt-color-2);
-    color: var(--support-color-1);
-    border-top: 3px solid var(--main-color);
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 5;
-}
-
-.bund-nav {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-a {
-    text-decoration: none;
-    color: var(--txt-color);
-}
-
-.icon {
-    display: flex;
-}
-
-/* Bokse */
-.container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 10px;
-    gap: 10px;
-}
-
-.column {
-    display: grid;
-    grid-template-rows: repeat(4, auto);
-    gap: 20px;
-}
-
-.box {
-    background-color: var(--main-color);
-    padding: 20px;
-    height: 30px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.box img {
-    max-width: 40px;
-    max-height: 30px;
-    margin-right: 10px;
-}
-
-.box a {
-    text-decoration: none;
-    color: var(--txt-color-2);
-}
-
-.icon-box {
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-/* Chat - Tanja */
-.chatbot {
-    background-color: var(--txt-color-2);
-    width: 420px;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.chatbot header {
-    background-color: var(--main-color);
-    font-family: var(--font-family);
-    padding: 20px 0;
-    text-align: center;
-}
-
-.chatbot header h2 {
-    color: var(--txt-color-2);
-    font-size: 1.5rem;
-    margin: 0;
-}
-
-.chatbot main {
-    max-height: 400px;
-    overflow-y: auto;
-    padding: 20px;
-}
-
-.chatbot  {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-top: 1px solid #ddd;
-}
-
-.chatbot input {
-    flex-grow: 1;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-}
-
-.chatbot button {
-    background-color: var(--main-color);
-    border: none;
-    color: var(--txt-color-2);
-    padding: 10px 20px;
-    margin-left: 10px;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-
-/* Overlay */
-.overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-}
-
-/* Buttons */
-button {
-    background-color: var(--main-color);
-    color: var(--txt-color-2);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-
-/* Hovedside shriley */
-.forside-logget-ind {
-    font-family: var(--font-family);
-    color: var(--txt-color);
-}
-
-.forside-logget-ind .title {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.forside-logget-ind .description {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-.forside-logget-ind .features {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.forside-logget-ind .feature {
-    background-color: var(--main-color);
-    padding: 20px;
-    border-radius: 10px;
-    flex: 1;
-    min-width: 200px;
-}
-
-.forside-logget-ind .feature h3 {
-    color: var(--txt-color-2);
-    margin: 0 0 10px;
-}
-
-.forside-logget-ind .feature p {
-    color: var(--txt-color-2);
-    margin: 0;
-}
-
-}
+    .installation {
+        margin: 0; /* Fjerner standard margin */
+    }
+    
+    .installation-h3 {
+        margin: 0; /* Fjerner standard margin */
+    }
+    
+    .img-installation {
+        max-width: 100%; /* Sørger for, at billedet ikke overstiger containerens bredde */
+        height: auto; /* Bevarer billedets forhold */
+    }
+    /*trin guide*/
+    .overesrkift{
+        color: var(--support-color-1);
+    }
+    /*Kategoriger*/
+    .kategorier {
+        display: flex;
+        flex-direction: column; /* Placerer elementerne i en vandret række */
+        justify-content: center; /* Centrerer elementerne vandret */
+        align-items: center; /* Centrerer elementerne lodret */
+        gap: 20px; /* Tilføjer afstand mellem elementerne */
+        margin: 0;
+        padding: 20px 0; /* Tilføjer lidt indvendig afstand op og ned */
+    }
+    
+    .kategori-item {
+        display: flex;
+        flex-direction: column; /* Placerer linket over billedet */
+        align-items: center; /* Centrerer indholdet vandret */
+        text-align: center; /* Centrerer teksten */
+        max-width: 150px; /* Begrænser bredden af hvert element */
+    }
+    
+    .kategori-item a {
+        margin-bottom: 10px; /* Tilføjer lidt afstand mellem linket og billedet */
+        text-decoration: none; /* Fjerner understregning af linket */
+        color: var(--main-color); /* Tilføjer farve til linket */
+        font-weight: bold; /* Tilføjer fed skrift */
+    }
+    
+    .kategori-item img {
+        max-width: 100%; /* Sørger for, at billedet ikke overstiger containerens bredde */
+        height: auto; /* Bevarer billedets forhold */
+    }
+    /*chatbot elice*/
+    
+    }
 /*tablet*/
 @media (min-width:700px){
 
@@ -576,78 +456,177 @@ button {
      height: 30px; /* Juster størrelsen efter behov */
      width: 30px;
  }
-    /*downloade side*/
-    .navbar {
-        background-color: var(--txt-color-2);
-        border-bottom: 3px var(--main-color);
-        max-width: 100vh;
-        border-bottom: 3px solid var(--main-color);
-    }
-    
-    .nav-ul {
-        list-style: none;
-        text-decoration: none;
-        display: flex;
-        padding: 20px;
-        justify-content: space-between;
-    }
-    .logo-navn{
-        color: var(--main-color);
-    }
-    
-    a {
-        text-decoration: none;
-        color: var(--main-color);
-        
-    }
-    
-    .downloade-btn {
-        background-color: var(--main-color);
-        color: var(--txt-color-2);
-        display: flex;
-        width: 305px;
-        height: 84px;
-        padding: 26px 80px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        font-size: larger;
-        flex-shrink: 0;
-    }
-    /*html til mobile*/
-.logo,
-.nyher,
-.opretbruger-btn,
-.login-btn {
+ /*opretbruger slut*/ 
+
+ /*index-desk*/
+ /*CSS mobile version*/
+.navn-e, .Velkommen-index, .container, .logo, .nyher, .opretbruger-btn, .login-btn, .opretbruger-btn, .login-btn, .allerede-bruger {
     display: none;
 }
-/*html til mobil slut*/
-.desktop-img{
-    position: absolute;
-    left: 1000px;
+/*CSS mobile version slut*/
+
+/*desktop navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--txt-color-2);
+    border: 1px solid var(--main-color);
+    padding: 25px 20px;
 }
-.desktop-title{
+
+.nav-ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-ul a {
+    text-decoration: none;
+    color: var(--main-color);
+    padding: 10px;
+}
+
+.nav-ul li {
+    position: relative;
+    margin-right: 20px;
+}
+
+.nav-ul li:last-child {
+    margin-right: 0;
+}
+
+.logo-navn {
+    color: var(--main-color);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--txt-color-2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sub-menu li {
+    width: 200px; /* ændre størrelsen på submenuen. */
+}
+
+.sub-menu li a {
+    display: block;
+    padding: 10px;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.sub-menu li a:hover {
+    background-color: var(--main-color);
+    color: var(--txt-color-2);
+    width: 200px;
+}
+
+.nav-ul li:hover .sub-menu {
+    display: block;
+}
+  /*desktop navbar slut*/
+
+.container-index {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.text-content {
+    flex: 1;
+}
+.txt-content{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;  
+}
+.image-content {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    left: -200px;
+}
+
+.desktop-img {
+    max-width: 100%;
+    height: auto;
+    margin: 60px 70px 0 0;
+}
+
+.desktop-title, .desktop, .desktop-txt-1, .desktop-txt, .btn-chat {
+    margin: 10px 0;
+}
+
+.btn-chat {
+    display: inline-block;
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.desktop-title {
     color: var(--main-color);
     letter-spacing: -1.34px;
+    font-size: 60px;
     align-items: center;
-   
+    padding: 30px;
 }
-.desktop{
+
+.desktop {
     font-family: var(--font-family);
     letter-spacing: -1.34px;
     color: var(--main-color);
+    padding: 0px 40px 0px 40px;
 }
-.desktop-txt{
+
+.desktop-txt {
     position: relative;
     color: var(--se-honeysuckle-orange);
     font-family: var(--font-family);
     font-size: larger;
-    left: 900px;
-    
+    top: 200px;
+    left: 300px;
 }
-.desktop-txt-1{
+
+.desktop-txt-1 {
+    position: relative;
     color: var(--txt-color);
+    top: 100px;
+    left: 780px;
 }
+
+.btn-chat {
+    position: relative;
+    height: 40px;
+    width: 200px;
+    margin: 40px;
+    background: var(--main-color);
+    color: var(--txt-color-2);
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    top: 100px;
+    left: 100px;
+}
+
+
 /*chatbot siden*/
 .chatbot{
     background-color: var(--txt-color-2);
@@ -711,7 +690,7 @@ button {
 .navbar-bund .bund-nav .nav-a .icon {
 display: none;
 }
-}
+
 /*chat-Tanja*/
 .chatbot{
     background-color: var(--txt-color-2);
@@ -807,4 +786,5 @@ display: none;
     font-size: 1.35rem;
     cursor: pointer;
     background: red;
+}
 }
