@@ -1,7 +1,4 @@
 //Louise
-// Array til at gemme brugerobjekter
-var users = [];
-
 // Funktion til at validere formen og tilføje brugerobjekt til arrayet
 function signUp(event) {
     event.preventDefault(); // Forhindrer formularen i at blive sendt
@@ -32,10 +29,14 @@ function signUp(event) {
 
     // Nulstil formen
     document.getElementById('opbru').reset();
+
+    // Naviger til forsiden
+    window.location.href = 'forside.html';
 }
 
 // Lyt efter submit-begivenheden på formen og kald signUp-funktionen
 document.getElementById('opbru').addEventListener('submit', signUp);
+
 
 
 

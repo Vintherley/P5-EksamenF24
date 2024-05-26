@@ -297,12 +297,6 @@ body{
             height: 25px; 
             width: 25px; 
         } 
-
-        .LK {
-            text-decoration: none;
-            font-family: var(--font-family); 
-            color: var(--txt-color-2); 
-        }
     
     /*Log ind*/ 
     
