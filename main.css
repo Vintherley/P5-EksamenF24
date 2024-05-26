@@ -31,7 +31,7 @@ body{
             background-color: var(--txt-color-2);
             color: var(--support-color-1);
             border-top: 3px solid var(--main-color);
-            padding: 20px;
+            padding: 0px;
             position: fixed;
             bottom: 0;
             width: 100%;
@@ -43,7 +43,7 @@ body{
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            margin: 0;
+            margin: 10px;
             padding: 0;
         }
         
@@ -53,7 +53,8 @@ body{
         }
         
         .icon {
-            display: flex;
+            display: block;
+            margin-bottom: 10px;
         }
         /*nav bar til bunde af appen slut*/
     
@@ -930,4 +931,18 @@ display: none;
     cursor: pointer;
     background: red;
 }
+}
+
+.steps-container {
+    text-align: center;
+    padding-bottom: 100px;
+}
+.step-headline {
+    color: #3DCD58;
+    font-size: 30px;  
+}
+.step-image {
+    display: inline-block;
+    width: 100%;
+    max-width: 250px;
 }
