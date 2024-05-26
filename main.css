@@ -859,7 +859,9 @@ display: none;
 .steps-container {
     text-align: center;
 }
-.step-headline {  
+.step-headline {
+    color: #3DCD58;
+    font-size: 30px;  
 }
 .step-image {
     display: inline-block;
