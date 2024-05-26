@@ -6,7 +6,7 @@
     <title>Opretbruger</title>
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </head>
 <body>
     <nav class="navbar-top-opret">
@@ -19,17 +19,24 @@
         </div>
     </nav>
 <div class="body">
-    <p class="brugernavn">Brugernavn</p>
-<input type="text" class="bruger">
-<p class="em">Email*</p>
-<input type="email" class="email">
-<p class="opk">Opret kodeord*</p>
-<input type="text" class="kodeord">
-<div class="checkbox-container">
-    <p class="p-checkbox">Godkend betingelser</p>
-    <input type="checkbox" class="checkbox">
-</div>
-<button class="opet-btn">Opret</button> <!--lige nu er dette ikke et link, hvis det er må du gerne lave det til et link-->
+    <form id="opbru">
+        <p class="brugernavn">Brugernavn</p>
+        <input type="text" class="bruger" id="bruger">
+        <p class="em">Email*</p>
+        <input type="email" class="email" id="em">
+        <p class="opk">Opret kodeord*</p>
+            <div class="password-container">
+                <input type="password" class="kodeord" id="kode">
+                <button type="button" onclick="togglePasswordVisibility()">
+                    <img src="img/eye.svg" id="eye" alt="Vis/skjul kodeord"> <!-- SVG-ikon til at vise/skjule kodeord -->
+                </button>
+            </div>
+        <div class="checkbox-container">
+        <p class="p-checkbox">Godkend betingelser</p>
+        <input type="checkbox" class="checkbox" id="term">
+    </div>
+    <button type="submit" class="opet-btn" id="opbru-btn">Opret bruger</button> 
+    </form>
 <p class="opret-bruger-med">Eller opret bruger med</p>
 <a href="#" class="opretside"><img src="img/Socialgoogle.png" class="some google" alt="Google icon">Google</a>
 <a href="#" class="opretside"><img src="img/socialfacebook.svg" class="some facebook" alt="facebook icon">Facebook</a>
