@@ -225,7 +225,27 @@ body{
             margin: 0 25px; 
         } 
     
-         
+        .password-container {
+            position: relative;
+          }
+          
+          .password-container button {
+            position: absolute;
+            right: 5px; /* Justerer ikonets position til højre */
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            cursor: pointer;
+            z-index: 1; /* Sørger for, at ikonet ligger ovenpå inputfeltet */
+          }
+
+          .password-container button img {
+            width: 20px; /* Ændre størrelsen efter behov */
+            height: auto; /* Sørg for, at højden skalerer proportionalt */
+            margin-right: 30px;
+          }
+          
     
         .em { 
             font-family: var(--font-family); 

@@ -1,12 +1,28 @@
 //Louise
-// Funktion til at validere formen og tilføje brugerobjekt til arrayet
+let users = []; // Array til at opbevare brugerobjekter
+
+// Funktion til at vise eller skjule kodeordet
+function togglePasswordVisibility() {
+    let passwordInput = document.getElementById('kode');
+    let eyeIcon = document.getElementById('eye'); // Ændret til 'eye'
+
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        eyeIcon.src = "img/eye-open.svg"; // Skift til et åbent øje-ikon
+    } else {
+        passwordInput.type = "password";
+        eyeIcon.src = "img/eye.svg"; // Skift til et lukket øje-ikon
+    }
+}
+
+// Funktion til at håndtere tilmeldingsprocessen
 function signUp(event) {
     event.preventDefault(); // Forhindrer formularen i at blive sendt
 
     // Hent inputværdierne
-    var username = document.getElementById('bruger').value;
-    var email = document.getElementById('em').value;
-    var password = document.getElementById('kode').value;
+    let username = document.getElementById('bruger').value;
+    let email = document.getElementById('em').value;
+    let password = document.getElementById('kode').value;
 
     // Valider input
     if (username === '' || email === '' || password === '') {
@@ -15,7 +31,7 @@ function signUp(event) {
     }
 
     // Opret brugerobjekt
-    var user = {
+    let user = {
         username: username,
         email: email,
         password: password
@@ -23,9 +39,6 @@ function signUp(event) {
 
     // Tilføj brugerobjekt til array
     users.push(user);
-
-    // Vis en besked om succesfuld tilmelding
-    alert('Tilmelding fuldført!');
 
     // Nulstil formen
     document.getElementById('opbru').reset();
@@ -36,10 +49,6 @@ function signUp(event) {
 
 // Lyt efter submit-begivenheden på formen og kald signUp-funktionen
 document.getElementById('opbru').addEventListener('submit', signUp);
-
-
-
-
 
 //Lotte
 

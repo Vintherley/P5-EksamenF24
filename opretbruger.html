@@ -25,13 +25,17 @@
         <p class="em">Email*</p>
         <input type="email" class="email" id="em">
         <p class="opk">Opret kodeord*</p>
-        <input type="text" class="kodeord" id="kode">
+            <div class="password-container">
+                <input type="password" class="kodeord" id="kode">
+                <button type="button" onclick="togglePasswordVisibility()">
+                    <img src="img/eye.svg" id="eye" alt="Vis/skjul kodeord"> <!-- SVG-ikon til at vise/skjule kodeord -->
+                </button>
+            </div>
         <div class="checkbox-container">
         <p class="p-checkbox">Godkend betingelser</p>
         <input type="checkbox" class="checkbox" id="term">
-</div>
-    <button type="submit" class="opet-btn" id="opbru-btn">Opret bruger</button> <!--lige nu er dette ikke et link, hvis det er må du gerne lave det til et link-->
-    <div id="besked"></div>
+    </div>
+    <button type="submit" class="opet-btn" id="opbru-btn">Opret bruger</button> 
     </form>
 <p class="opret-bruger-med">Eller opret bruger med</p>
 <a href="#" class="opretside"><img src="img/Socialgoogle.png" class="some google" alt="Google icon">Google</a>
