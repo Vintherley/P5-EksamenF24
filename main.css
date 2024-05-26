@@ -807,3 +807,14 @@ display: none;
     background: red;
 }
 }
+
+.steps-container {
+    text-align: center;
+}
+.step-headline {  
+}
+.step-image {
+    display: inline-block;
+    width: 100%;
+    max-width: 250px;
+}
