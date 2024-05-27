@@ -770,167 +770,89 @@ body{
     left: 100px;
 }
 
-
-/*chatbot siden*/
-.chatbot{
-    background-color: var(--txt-color-2);
-    width: 420px; /*kan ændres efter skræm størrelse*/
-    position: fixed;
-    right: 40px; /*kan ændres efter skræm størrelse*/
-    bottom: 40px; /*kan ændres efter skræm størrelse*/
-    border-radius: 15px;
-    overflow: hidden;
-}
-.chatbot header{
-    background-color: var(--main-color);
-    font-family: var(--font-family);
-    padding: 20px px 0; /*kan ændres efter skræm størrelse*/
-    text-align: center;
-}
-.chatbot header h2{
-    color: var(--txt-color-2);
-    font-size: 1.4rem; /*kan ændres efter skræm størrelse*/
-    padding: 20px;
-    border-radius: 15px;
-}
-.chatbot .chatbox{
-    height: 410px; /*kan ændres efter skræm størrelse*/
-    overflow-y: auto;
-    padding: 30px 20px 60px;/*størrelsen på chat. kan ændres efter skræm størrelse*/
-    
-    }
-.chatbot .chat {
-        display: flex;
-    } 
-.chatbox .incoming span{
-    height: 32px;/*kan ændres efter skræm størrelse*/
-    width: 32px;/*kan ændres efter skræm størrelse*/
-    color: var(--txt-color-2);
-    background-color: var(--main-color);
-    align-self: flex-end;
-    text-align: center;
-    line-height: 32px;
-    border-radius: 4px;
-    margin: 0 10px 7px 0;
-}
-.chatbox .outgoing{
-    justify-content: flex-end;
-    margin: 20px;
-}
-
-.chatbot .chat p{
-    color: var(--txt-color-2);
-    font-size: 0,95rem; /*kan ændres efter skræm størrelse*/
-    padding: 16px 20px;/*kan ændres efter skræm størrelse*/
-    max-width: 75%;
-    border-radius: 10px 10px 0 10px; /*kan ændres efter skræm størrelse*/
-    background-color: var(--main-color);
-}
-.chatbox .incoming p{
-    color: var(--txt-color);
-    background-color: var(--support-color-2);
-    border-radius: 10px 10px 10px 0; 
-}
-.navbar-bund .bund-nav .nav-a .icon {
-display: none;
-}
-
 /*chat-Tanja*/
-.chatbot{
-    background-color: var(--txt-color-2);
-    width: 420px; /* kan ændres efter skærmstørrelse */
-    position: fixed;
-    right: 20px; /* Placerer chatbotten 20px fra højre kant */
-    bottom: 20px; /* Placerer chatbotten 20px fra bunden */
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tilføjer en skygge for bedre synlighed */
-}
-
-.chatbot header{
+ /*chatbot Elice*/
+ .chatbot header {
     background-color: var(--main-color);
-    font-family: var(--font-family);
-    padding: 20px 0; /* Fjernede den ekstra px */
+    color: var(--txt-color-2);
+    padding: 10px;
+    border-bottom: 1px solid var(--txt-color);
     text-align: center;
 }
 
-.chatbot header h2{
-    color: var(--txt-color-2);
-    font-size: 1.4rem; /* kan ændres efter skærmstørrelse */
-    padding: 20px;
-}
-
-.chatbot .chatbox{
-    height: 410px; /* kan ændres efter skærmstørrelse */
+.chatbox {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    height: 300px;
     overflow-y: auto;
-    padding: 30px 20px 60px; /* størrelsen på chat, kan ændres efter skærmstørrelse */
 }
 
-.chatbot .chat {
+.chat {
     display: flex;
-} 
-
-.chatbox .incoming span{
-    height: 32px; /* kan ændres efter skærmstørrelse */
-    width: 32px; /* kan ændres efter skærmstørrelse */
-    color: var(--txt-color-2);
-    background-color: var(--main-color);
-    align-self: flex-end;
-    text-align: center;
-    line-height: 32px;
-    border-radius: 4px;
-    margin: 0 10px 7px 0;
+    align-items: flex-start;
+    margin-bottom: 10px;
 }
 
-.chatbox .outgoing{
+.chat.incoming {
+    justify-content: flex-start;
+    background-color: var(--main-color);
+    color: var(--txt-color-2);
+    border-radius: 10px;
+   
+}
+
+.chat.outgoing {
     justify-content: flex-end;
-    margin: 20px;
-}
-
-.chatbot .chat p{
-    color: var(--txt-color-2);
-    font-size: 0.95rem; /* Rettet til punktum */
-    padding: 16px 20px; /* kan ændres efter skærmstørrelse */
-    max-width: 75%;
-    border-radius: 10px 10px 0 10px; /* kan ændres efter skærmstørrelse */
-    background-color: var(--main-color);
-}
-
-.chatbox .incoming p{
-    color: var(--txt-color);
     background-color: var(--support-color-2);
-    border-radius: 10px 10px 10px 0;
+    color: var(--txt-color);
+    border-radius: 10px;
+   
+
+
 }
 
-.chatbot .chat-input{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    border-top: 1px solid var(--main-color);
-    padding: 5px 20px;
+.chat-input {
     display: flex;
-    gap: 5px;
-} 
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
 
-.chat-input textarea{
+.chat-input textarea {
+    flex-grow: 1;
+    padding: 10px;
+    height:100px;
     border: none;
-    outline: none;
-    font-size: 0.95rem;
     resize: none;
-    padding: 16px 15px 16px 0;
-    height: 55px; /* ændres efter skærmstørrelse */
-    width: 100%;
 }
 
-.chat-input span{
-    align-self: flex-end;
-    height: 55px;
-    line-height: 55px;
-    color: var(--main-color);
-    font-size: 1.35rem;
-    cursor: pointer;
-    background: red;
+.input-icons {
+    display: flex;
+    align-items: center;
 }
+
+#send-btn {
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.icon-chat {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.bot-img{
+    height: 25px;
+    width: 25px;
+
+}
+.navbar-bund{
+    display: none;
+}
+/*chat bot slut*/
 }
 
 .steps-container {
