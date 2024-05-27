@@ -1,0 +1,382 @@
+
+/*Gennerelt styling*/
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font-family);
+}
+:root{
+    --background-color:#;
+    --txt-color:#000000;
+    --txt-color-2:white;
+    --main-color:#3DCD58;
+    --only-logo-color:#009530;
+    --support-color-1:#626469;
+    --support-color-2:#9FA0A4;
+    --skye-blue:#42B4E6;
+    --se-sonflower-yellow:#FFD100;
+    --se-honeysuckle-orange:#E47F00;
+    --se-fuchsia-red:#B10043;
+    --font-family:"Nunito", sans-serif;
+
+    --lofi:#626469;
+
+}
+
+/*desktop*/
+@media (min-width:900px){
+    /* Opret bruger */
+    .navbar-top-opret, .topbar, .left-content, .tilbage, .top-nav p {
+        display: none;
+     }
+     
+     /* Opret bruger - Louise */
+     
+     body {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         background-color: var(--background-color);
+     }
+     
+     .bruger, .email, .kodeord {
+         background-color: var(--txt-color-2);
+         height: 30px;
+         width: 400px; /* Større bredde for desktop */
+         margin: 10px 0; /* Ensartet margin */
+         padding: 5px;
+         border-radius: 9999px;
+         border: 2px solid #D0D0D0;
+         box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
+         
+     }
+     
+     .checkbox {
+         height: 20px;
+         width: 20px;
+     }
+     
+     .checkbox-container {
+         display: flex;
+         align-items: center;
+         margin: 10px 25px;
+     }
+     
+     .p-checkbox {
+         margin: 0;
+         margin-right: 10px;
+     }
+     
+     
+     .opet-btn {
+         background-color: var(--main-color);
+         height: 40px;
+         width: 250px; /* Større bredde for desktop */
+         margin: 20px 0; /* Ensartet margin */
+         color: var(--txt-color-2);
+         border-radius: 9999px;
+         border: 1px solid #D0D0D0;
+         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);       
+     }
+     
+     .opret-bruger-med {
+         margin: 20px 0; /* Ensartet margin */
+     }
+     
+     .opretside {
+         background-color: var(--txt-color-2);
+         width: 400px; /* Større bredde for desktop */
+         margin: 10px 0; /* Ensartet margin */
+         gap: 20px; /* Mindre afstand mellem ikon og tekst */
+         border-radius: 9999px;
+         padding: 5px;
+         border: 2px solid #D0D0D0;
+         box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
+         text-decoration: none;
+         font-family: var(--font-family);
+         color: var(--main-color);
+         display: flex;     
+     }
+     
+     .google, .facebook {
+         height: 30px; /* Juster størrelsen efter behov */
+         width: 30px;
+     }
+     /*opretbruger slut*/ 
+    
+     /*index-desk*/
+     /*CSS mobile version*/
+    .navn-e, .Velkommen-index, .container, .logo, .nyher, .opretbruger-btn, .login-btn, .opretbruger-btn, .login-btn, .allerede-bruger {
+        display: none;
+    }
+    /*CSS mobile version slut*/
+    
+    /*desktop navbar */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--txt-color-2);
+        border: 1px solid var(--main-color);
+        padding: 25px 20px;
+    }
+    
+    .nav-ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav-ul a {
+        text-decoration: none;
+        color: var(--main-color);
+        padding: 10px;
+    }
+    
+    .nav-ul li {
+        position: relative;
+        margin-right: 20px;
+    }
+    
+    .nav-ul li:last-child {
+        margin-right: 0;
+    }
+    
+    .logo-navn {
+        color: var(--main-color);
+        font-size: 18px;
+        text-decoration: none;
+    }
+    
+    .sub-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--txt-color-2);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .sub-menu li {
+        width: 200px; /* ændre størrelsen på submenuen. */
+    }
+    
+    .sub-menu li a {
+        display: block;
+        padding: 10px;
+        color: var(--main-color);
+        text-decoration: none;
+    }
+    
+    .sub-menu li a:hover {
+        background-color: var(--main-color);
+        color: var(--txt-color-2);
+        width: 200px;
+    }
+    
+    .nav-ul li:hover .sub-menu {
+        display: block;
+    }
+      /*desktop navbar slut*/
+    
+    .container-index {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    
+    .text-content {
+        flex: 1;
+    }
+    .txt-content{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;  
+    }
+    .image-content {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        left: -200px;
+    }
+    
+    .desktop-img {
+        max-width: 100%;
+        height: auto;
+        margin: 60px 70px 0 0;
+    }
+    
+    .desktop-title, .desktop, .desktop-txt-1, .desktop-txt, .btn-chat {
+        margin: 10px 0;
+    }
+    
+    .btn-chat {
+        display: inline-block;
+        background-color: var(--main-color);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin: 10px 0;
+    }
+    
+    .desktop-title {
+        color: var(--main-color);
+        letter-spacing: -1.34px;
+        font-size: 60px;
+        align-items: center;
+        padding: 30px;
+    }
+    
+    .desktop {
+        font-family: var(--font-family);
+        letter-spacing: -1.34px;
+        color: var(--main-color);
+        padding: 0px 40px 0px 40px;
+    }
+    
+    .desktop-txt {
+        position: relative;
+        color: var(--se-honeysuckle-orange);
+        font-family: var(--font-family);
+        font-size: larger;
+        top: 200px;
+        left: 300px;
+    }
+    
+    .desktop-txt-1 {
+        position: relative;
+        color: var(--txt-color);
+        top: 100px;
+        left: 780px;
+    }
+    
+    .btn-chat {
+        position: relative;
+        height: 40px;
+        width: 200px;
+        margin: 40px;
+        background: var(--main-color);
+        color: var(--txt-color-2);
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+        top: 100px;
+        left: 100px;
+    }
+    
+    /*chat-Tanja*/
+     /*chatbot Elice*/
+     .chatbot header {
+        background-color: var(--main-color);
+        color: var(--txt-color-2);
+        padding: 10px;
+        border-bottom: 1px solid var(--txt-color);
+        text-align: center;
+    }
+    
+    .chatbox {
+        list-style: none;
+        padding: 10px;
+        margin: 0;
+        height: 300px;
+        overflow-y: auto;
+    }
+    
+    .chat {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
+    
+    .chat.incoming {
+        justify-content: flex-start;
+        background-color: var(--main-color);
+        color: var(--txt-color-2);
+        border-radius: 10px;
+       
+    }
+    
+    .chat.outgoing {
+        justify-content: flex-end;
+        background-color: var(--support-color-2);
+        color: var(--txt-color);
+        border-radius: 10px;
+       
+    
+    
+    }
+    
+    .chat-input {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-top: 1px solid #ddd;
+    }
+    
+    .chat-input textarea {
+        flex-grow: 1;
+        padding: 10px;
+        height:100px;
+        border: none;
+        resize: none;
+    }
+    
+    .input-icons {
+        display: flex;
+        align-items: center;
+    }
+    
+    #send-btn {
+        cursor: pointer;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .icon-chat {
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    .bot-img{
+        height: 100px;
+        width: 100px;
+
+    
+    }
+    .navbar-bund{
+        display: none;
+    }
+    .app-download-btn{
+        background-color: var(--main-color);
+        height:  100px;
+        width: 200px;
+    }
+    .app-download-btn a{
+        text-decoration: none;
+        color: var(--txt-color-2);
+    }
+    /*chat bot slut*/
+    }
+    
+    .steps-container {
+        text-align: center;
+        padding-bottom: 100px;
+    }
+    .step-headline {
+        color: #3DCD58;
+        font-size: 30px;  
+    }
+    .step-image {
+        display: inline-block;
+        width: 100%;
+        max-width: 250px;
+    }

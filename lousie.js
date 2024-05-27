@@ -1,4 +1,3 @@
-//Louise
 let users = []; // Array til at opbevare brugerobjekter
 
 // Funktion til at vise eller skjule kodeordet
@@ -49,9 +48,3 @@ function signUp(event) {
 
 // Lyt efter submit-begivenheden på formen og kald signUp-funktionen
 document.getElementById('opbru').addEventListener('submit', signUp);
-
-//Lotte
-
-//Shirley
-
-//Tanja
