@@ -122,6 +122,10 @@ body {
 }
 
 /* styling af index */
+.nav-ul, .container-index{
+    display: none;
+}
+
 .nyher {
     font-family: var(--font-family);
     color: var(--txt-color);
@@ -326,11 +330,11 @@ a {
     }
 
     .nav-ul-left{
-        margin-right: 35%;
+        margin-right: 30%;
     }
 
     .nav-ul-rigth{
-        margin-left: 35%;
+        margin-left: 20%;
     }
 
     .logo-navn {
@@ -355,6 +359,7 @@ a {
         list-style: none;
         margin: 0;
         padding: 0;
+        z-index: 1;
     }
 
     .sub-menu li {
@@ -385,109 +390,69 @@ a {
     /* desktop navbar slut */
 
     /* styling af selve siden af index */
-    .container-index {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 20px;
-    }
 
-    .text-content {
-        flex: 1;
-    }
-
-    .txt-content {
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
-    }
-
-    .text-content h1 {
-        font-size: 96px;
-    }
-
-    .text-content h2 {
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 70px; /* 145.833% */
-        letter-spacing: -1.34px;
-    }
-
-    .image-content {
-        position: relative;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
-        left: -200px;
-    }
-
-    .desktop-img {
-        max-width: 100%;
-        height: auto;
-        margin: 60px 70px 0 0;
-    }
-
-    .desktop-title,
-    .desktop,
-    .desktop-txt-1,
-    .desktop-txt,
-    .btn-chat {
-        margin: 10px 0;
-    }
-
-    .btn-chat {
-        display: inline-block;
-        background-color: var(--main-color);
-        color: white;
-        padding: 10px 20px;
-        border-radius: 5px;
-        text-decoration: none;
-        margin: 10px 0;
-    }
-
-    .desktop-title {
-        color: var(--main-color);
-        letter-spacing: -1.34px;
-        font-size: 60px;
-        align-items: center;
-        padding: 30px;
-    }
-
-    .desktop {
-        font-family: var(--font-family);
-        letter-spacing: -1.34px;
-        color: var(--main-color);
-        padding: 0px 40px;
-    }
-
-    .desktop-txt {
-        position: relative;
-        color: var(--se-honeysuckle-orange);
-        font-family: var(--font-family);
-        font-size: larger;
-        top: 200px;
-        left: 300px;
-    }
-
-    .desktop-txt-1 {
-        position: relative;
-        color: var(--txt-color);
-        top: 100px;
-        left: 780px;
-    }
-
-    .btn-chat {
-        position: relative;
-        height: 40px;
-        width: 200px;
-        margin: 40px;
-        background: var(--main-color);
-        color: var(--txt-color-2);
-        font-size: 20px;
-        text-align: center;
-        text-decoration: none;
-        top: 100px;
-        left: 100px;
-    }
+/* Container for index page elements */
+.container {
+    display: none;
 }
+
+.container-index {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Opdel i to kolonner */
+    grid-gap: 10px; /* Afstand mellem elementerne */
+    padding: 40px;
+    margin-left: 88px;
+    margin-right: 88px;
+}
+
+.desktop-title {
+    font-size: 96px;
+    color: var(--main-color);
+    letter-spacing: -1.34px;
+    padding: 10px 0;
+    grid-column: span 2; /* Bredde af to kolonner */
+}
+
+.desktop {
+    font-family: var(--font-family);
+    letter-spacing: -1.34px;
+    color: var(--main-color);
+    padding: 0px 20px;
+    font-size: 33px;
+}
+
+.btn-chat {
+    display: flex;
+    width: 100px;
+    height: 50px;
+    padding: 26px 112px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background-color: var(--main-color);
+    font-size: 36px;
+    color: var(--txt-color-2);
+    margin: 50px 20px;
+}
+
+.image-content {
+    display: flex;
+    justify-content: center;
+}
+
+.desktop-txt {
+    color: var(--se-honeysuckle-orange);
+    font-family: var(--font-family);
+    font-size: 24px;
+    border: 1px solid var(--support-color-1);
+    padding: 10px;
+    margin: 50px -100px 0 ;
+}
+
+.desktop-txt-1 {
+    color: var(--txt-color);
+    font-size: 33px;
+    padding: 10px;
+    margin: 50 -50px 0 0 ;
+}}
