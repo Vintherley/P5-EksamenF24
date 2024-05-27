@@ -1,126 +1,115 @@
-/*Gennerelt styling*/
-body{
+/* Generelt styling */
+body {
     margin: 0px;
     padding: 0px;
     font-family: var(--font-family);
 }
-:root{
-    --background-color:#;
-    --txt-color:#000000;
-    --txt-color-2:white;
-    --main-color:#3DCD58;
-    --only-logo-color:#009530;
-    --support-color-1:#626469;
-    --support-color-2:#9FA0A4;
-    --skye-blue:#42B4E6;
-    --se-sonflower-yellow:#FFD100;
-    --se-honeysuckle-orange:#E47F00;
-    --se-fuchsia-red:#B10043;
-    --font-family:"Nunito", sans-serif;
 
-    --lofi:#626469;
+:root {
+    --background-color: #fff;
+    --txt-color: #000000;
+    --txt-color-2: white;
+    --main-color: #3DCD58;
+    --only-logo-color: #009530;
+    --support-color-1: #626469;
+    --support-color-2: #9FA0A4;
+    --skye-blue: #42B4E6;
+    --se-sonflower-yellow: #FFD100;
+    --se-honeysuckle-orange: #E47F00;
+    --se-fuchsia-red: #B10043;
+    --font-family: "Nunito", sans-serif;
+
+    --lofi: #626469;
 }
-/*generelt styling slut*/
+
+/* Generelt styling slut */
 
 .login-body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center; /* Center elements vertically */
     background-color: var(--background-color);
 }
-.navbar-top-opret { 
-        flex-direction: row; 
-        justify-content: space-around; 
-        padding: 20px; 
-        background-color: var(--main-color); 
-    } 
-    
-    .left-content { 
-        display: flex; 
-        align-items: center; 
-    } 
-  
-    .topbar { 
-        height: 20px; /* Juster størrelsen efter behov */ 
-        top: 5px; 
-    } 
 
-     
+.navbar-top-opret {
+    padding: 20px;
+    background-color: var(--main-color);
+}
 
-    .top-nav p { 
-        font-size: 1rem; /* Juster størrelsen efter behov */ 
-        color: var(--main-color); 
-        padding: 5px 5px 0 5px; 
+.left-content {
+    display: flex;
+    align-items: center;
+}
 
-    } 
+.topbar {
+    height: 20px; /* Juster størrelsen efter behov */
+    top: 5px;
+}
 
-    .tilbage { 
-        height: 15px; /* Juster størrelsen efter behov */ 
-        z-index: 5; 
-    } 
+.top-nav p {
+    font-size: 1rem; /* Juster størrelsen efter behov */
+    color: var(--main-color);
+    padding: 5px 5px 0 5px;
+}
 
-    .brn-em, .kodeord{ 
-        background-color: var(--txt-color-2);  
-        padding: 5px;  
-        width: 300px;  
-        height: 30px;  
-        border-radius: 9999px;  
-        border: 2px solid #D0D0D0;  
-        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;  
-        margin: 0 25px;  
-    } 
+.tilbage {
+    height: 15px; /* Juster størrelsen efter behov */
+    z-index: 5;
+}
 
-    .opretbruger-btn, .login-btn { 
-        width: 200px; 
-        height: 30px; 
-        border-radius: 23px; 
-        text-align: center; 
-        display: block; 
-        text-decoration: none; 
-        margin: 10px; 
-    } 
-     
-    .login-btn { 
-        background-color: var(--main-color); 
-        color: var(--txt-color-2); 
-        padding: 10px; 
-    } 
-    
-    .opretside { 
-        display: flex; 
-        background-color: var(--txt-color-2); 
-        padding: 5px; 
-        width: 300px; 
-        height: 30px; 
-        border-radius: 9999px; 
-        border: 2px solid #D0D0D0; 
-        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset; 
-        text-decoration: none; 
-        font-family: var(--font-family); 
-        color: var(--main-color); 
-        margin: 10px 25px; 
-        gap: 100px; 
+.brn-em, .kodeord {
+    background-color: var(--txt-color-2);
+    padding: 5px;
+    width: 300px;
+    height: 30px;
+    border-radius: 9999px;
+    border: 2px solid #D0D0D0;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    margin: 10px 0; /* Ensartet margin */
+}
+
+.opretbruger-btn, .login-btn {
+    width: 200px;
+    height: 30px;
+    border-radius: 23px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin: 10px auto; /* Center button horizontally */
+}
+
+.login-btn {
+    background-color: var(--main-color);
+    color: var(--txt-color-2);
+    padding: 10px;
+}
+
+.opretside {
+    display: flex;
+    background-color: var(--txt-color-2);
+    padding: 5px;
+    width: 300px;
+    height: 30px;
+    border-radius: 9999px;
+    border: 2px solid #D0D0D0;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    text-decoration: none;
+    font-family: var(--font-family);
+    color: var(--main-color);
+    margin: 10px 0; /* Ensartet margin */
+    gap: 100px;
+}
+
+.google, .facebook {
+    height: 30px; /* Juster størrelsen efter behov */
+    width: 30px;
+}
+
+@media (min-width: 900px) {
+    .opretside {
+        width: 400px; /* Større bredde for desktop */
+        margin: 10px 0; /* Ensartet margin */
+        gap: 20px; /* Mindre afstand mellem ikon og tekst */
     }
-
-    .google, .facebook {
-        height: 30px; /* Juster størrelsen efter behov */
-        width: 30px;
-    }
-
-    @media (min-width: 900px) {
-        .opretside {
-            background-color: var(--txt-color-2);
-            width: 400px; /* Større bredde for desktop */
-            margin: 10px 0; /* Ensartet margin */
-            gap: 20px; /* Mindre afstand mellem ikon og tekst */
-            border-radius: 9999px;
-            padding: 5px;
-            border: 2px solid #D0D0D0;
-            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
-            text-decoration: none;
-            font-family: var(--font-family);
-            color: var(--main-color);
-            display: flex;     
-        }}
-
-    
+}
