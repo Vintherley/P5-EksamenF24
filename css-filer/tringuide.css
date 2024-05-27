@@ -1,0 +1,117 @@
+/*Gennerelt styling*/
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font-family);
+}
+:root{
+    --background-color:#;
+    --txt-color:#000000;
+    --txt-color-2:white;
+    --main-color:#3DCD58;
+    --only-logo-color:#009530;
+    --support-color-1:#626469;
+    --support-color-2:#9FA0A4;
+    --skye-blue:#42B4E6;
+    --se-sonflower-yellow:#FFD100;
+    --se-honeysuckle-orange:#E47F00;
+    --se-fuchsia-red:#B10043;
+    --font-family:"Nunito", sans-serif;
+
+    --lofi:#626469;
+
+}
+
+/*generelt styling slut*/
+
+@media (max-width: 600px) {
+    /*nav bar til bunden af appen*/
+    .navbar-bund {
+        background-color: var(--txt-color-2);
+        color: var(--support-color-1);
+        border-top: 3px solid var(--main-color);
+        padding: 0px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 5;
+    }
+    
+    .bund-nav {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 10px;
+        padding: 0;
+    }
+    
+    .nav-a {
+        text-decoration: none;
+        color: var(--txt-color);
+    }
+    
+    .icon {
+        display: block;
+        margin-bottom: 10px;
+    }
+    /*nav bar til bunde af appen slut*/
+
+    /*Navbar til toppen af appen*/
+    .navbar-top {
+        display: flex;
+        height: 55px; /* Sætter højden til 30px */
+        justify-content: space-between; /* Placerer elementer yderst til venstre og højre */
+        align-items: center; /* Centrerer elementer lodret */
+        border-bottom: 1px solid var(--main-color);
+        padding: 0 20px; /* Tilføjer lidt indvendig afstand */
+    }
+    
+    .top-nav {
+        display: flex;
+        align-items: center;
+        flex-grow: 1; /* Sørger for, at .top-nav fylder tilgængelig plads */
+    }
+    
+    .logo-left {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo-left img {
+        display: block;
+        margin-right: 10px; /* Tilføjer afstand mellem logo og tekst */
+        height: 20px; /* Tilføjer en højde til logoet for at passe indenfor navbar-højden */
+    }
+    
+    .logo-txt {
+        text-decoration: none;
+        color: var(--main-color); /* Tilføjer farve til teksten */
+        font-weight: bold; /* Tilføjer fed skrift */
+        font-size: 16px; /* Justerer skriftstørrelsen for at passe indenfor navbar-højden */
+    }
+    
+    .topbar1, .tilbage {
+        margin-left: 50px; /* Tilføjer afstand mellem ikoner */
+        height: 20px; /* Tilføjer en højde til ikonerne for at passe indenfor navbar-højden */
+    }
+    
+    .tilbage {
+        margin-left: 70px; /* Flytter tilbagepil til højre side */
+    }
+    /*Navbar til toppen af appen slut*/
+}
+
+.steps-container {
+    text-align: center;
+    padding-bottom: 100px;
+}
+.step-headline {
+    color: #3DCD58;
+    font-size: 30px;  
+}
+.step-image {
+    display: inline-block;
+    width: 100%;
+    max-width: 250px;
+}

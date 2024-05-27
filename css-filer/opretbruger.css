@@ -1,0 +1,190 @@
+/* Generelt styling */
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font-family);
+}
+
+:root {
+    --background-color: #fff;
+    --txt-color: #000000;
+    --txt-color-2: white;
+    --main-color: #3DCD58;
+    --only-logo-color: #009530;
+    --support-color-1: #626469;
+    --support-color-2: #9FA0A4;
+    --skye-blue: #42B4E6;
+    --se-sonflower-yellow: #FFD100;
+    --se-honeysuckle-orange: #E47F00;
+    --se-fuchsia-red: #B10043;
+    --font-family: "Nunito", sans-serif;
+
+    --lofi: #626469;
+}
+
+/* Opret bruger */
+.opbru-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-top-opret {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: var(--main-color);
+}
+
+.left-content {
+    display: flex;
+    align-items: center;
+}
+
+.topbar {
+    height: 20px;
+    top: 5px;
+}
+
+.top-nav p {
+    font-size: 1rem;
+    color: var(--main-color);
+    padding: 5px 5px 0 5px;
+}
+
+.tilbage {
+    height: 15px;
+    z-index: 5;
+}
+
+/* Opret bruger - Louise */
+.bruger,
+.email,
+.kodeord {
+    background-color: var(--txt-color-2);
+    padding: 5px;
+    width: 300px;
+    height: 30px;
+    border-radius: 9999px;
+    border: 2px solid #D0D0D0;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    margin: 0 25px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.password-container button img {
+    width: 20px;
+    height: auto;
+    margin-right: 30px;
+}
+
+.em,
+.brugernavn,
+.opk,
+.p-checkbox {
+    font-family: var(--font-family);
+    margin: 10px 20px;
+}
+
+.opret-bruger-med {
+    margin: 10px 80px;
+}
+
+.checkbox {
+    height: 20px;
+    width: 20px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 25px;
+}
+
+.p-checkbox {
+    margin: 0;
+    margin-right: 10px;
+}
+
+.opet-btn {
+    background-color: var(--main-color);
+    font-family: var(--font-family);
+    color: var(--txt-color-2);
+    height: 40px;
+    width: 200px;
+    border-radius: 9999px;
+    border: 1px solid #D0D0D0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 30px 70px;
+}
+
+.opretside {
+    display: flex;
+    background-color: var(--txt-color-2);
+    padding: 5px;
+    width: 300px;
+    height: 30px;
+    border-radius: 9999px;
+    border: 2px solid #D0D0D0;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    text-decoration: none;
+    font-family: var(--font-family);
+    color: var(--main-color);
+    margin: 10px 25px;
+    gap: 100px;
+}
+
+.google {
+    height: 25px;
+    width: 25px;
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+    .opbru-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bruger,
+    .email,
+    .kodeord {
+        width: 400px;
+        margin: 10px 0;
+    }
+
+    .opet-btn {
+        width: 250px;
+    }
+
+    .opret-bruger-med {
+        margin: 20px 0;
+    }
+
+    .opretside {
+        width: 400px;
+        margin: 10px 0;
+        gap: 20px;
+    }
+
+    .google,
+    .facebook {
+        height: 30px;
+        width: 30px;
+    }
+}

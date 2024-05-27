@@ -378,6 +378,7 @@ body{
         font-weight: bold;
         margin-top: 10px;
     }
+
     /*installation*/
     .installation-container {
         display: flex;
@@ -855,16 +856,3 @@ body{
 /*chat bot slut*/
 }
 
-.steps-container {
-    text-align: center;
-    padding-bottom: 100px;
-}
-.step-headline {
-    color: #3DCD58;
-    font-size: 30px;  
-}
-.step-image {
-    display: inline-block;
-    width: 100%;
-    max-width: 250px;
-}
