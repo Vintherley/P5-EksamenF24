@@ -15,7 +15,7 @@ let steps = [
 
 let stepsContainer = document.querySelector('.steps-container');
 
-steps.forEach((step, index) => {
+steps.forEach((step) => {
     let headline = document.createElement('h2');
     let image = document.createElement('img');
     
