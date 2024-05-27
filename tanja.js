@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Funktion til at generere botens svar (placeholder logik)
     function generateBotResponse(userText) {
         // dette er hvad botten sender tilbage
-        return "Hvad kan jeg hjælpe dig med? ";
+        return "dette er et spørgsmål som jeg ikke kan svare på. Jeg sender dig videre til en menneskelig kollega ";
         
     }
 

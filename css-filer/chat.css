@@ -85,6 +85,39 @@ body {
 
     /*Navbar til toppen af appen slut*/
 
+    /*Navbar til bunden*/
+    .navbar-bund {
+        background-color: var(--txt-color-2);
+        color: var(--support-color-1);
+        border-top: 3px solid var(--main-color);
+        padding: 0px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 5;
+    }
+    
+    .bund-nav {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 10px;
+        padding: 0;
+    }
+    
+    .nav-a {
+        text-decoration: none;
+        color: var(--txt-color);
+    }
+    
+    .icon {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    /* nav bar til bunden af appen slut */
+
     /*CSS mobile version*/
     .navn-e,
     .Velkommen-index,
