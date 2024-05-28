@@ -220,6 +220,10 @@ a {
 /* styling af forside slut */
 
 /* styling af installation */
+.nav-ul, .installation-container2, .btn-chat2{
+    display: none;
+}
+
 .installation-container {
     display: flex;
     flex-direction: column;
@@ -455,4 +459,57 @@ a {
     font-size: 33px;
     padding: 10px;
     margin: 50 -50px 0 0 ;
-}}
+}
+
+/*styling af installation desktop*/
+.navbar-top, .installation-container, .navbar-bund{
+    display: none;
+}
+
+.installation-container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.first, .second{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.installation-h3-2 {
+    margin: 0;
+}
+
+.installation2{
+    margin-left: 66px;
+    margin-top: 100px;
+    font-size: 40px;
+    color: var(--main-color);
+}
+
+.img-installation2 {
+    max-width: 100%;
+    height: auto;
+    margin: 20px;
+}
+
+.btn-chat2{
+    display: flex;
+    width: 100px;
+    height: 50px;
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background-color: var(--main-color);
+    font-size: 24px;
+    color: var(--txt-color-2);
+}
+
+}
