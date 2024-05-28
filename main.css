@@ -247,13 +247,17 @@ a {
 }
 /* styling af installation slut */
 
+.navbar, .kategorier2, .btn-chat2{
+    display: none;
+}
+
 /* styling af Kategoriger */
 .kategorier {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     margin: 0;
     padding: 20px 0;
 }
@@ -275,7 +279,8 @@ a {
 
 .kategori-item img {
     max-width: 100%;
-    height: auto;
+    height: auto; 
+    border-radius: 5px;
 }
 
 /* styling af Kategoriger slut */
@@ -300,7 +305,7 @@ a {
 
     /* CSS mobile version slut */
 
-    /* Index -desktop navbar */
+    /* desktop navbar */
     .navbar {
         display: flex;
         flex-direction: row;
@@ -334,7 +339,7 @@ a {
     }
 
     .nav-ul-left{
-        margin-right: 30%;
+        margin-right: 25%;
     }
 
     .nav-ul-rigth{
@@ -451,7 +456,7 @@ a {
     font-size: 24px;
     border: 1px solid var(--support-color-1);
     padding: 10px;
-    margin: 50px -100px 0 ;
+    margin: 5px -100px 0 ;
 }
 
 .desktop-txt-1 {
@@ -479,6 +484,8 @@ a {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    flex: 25%;
+    margin-left: 66px;
 }
 
 .installation-h3-2 {
@@ -493,14 +500,14 @@ a {
 }
 
 .img-installation2 {
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
     margin: 20px;
 }
 
 .btn-chat2{
     display: flex;
-    width: 100px;
+    width: 150px;
     height: 50px;
     padding: 20px 40px;
     justify-content: center;
@@ -510,6 +517,76 @@ a {
     background-color: var(--main-color);
     font-size: 24px;
     color: var(--txt-color-2);
+    position: absolute;
+    left: 870px; 
+    top: 700px;
+}
+/*styling af installation desktop slut*/
+
+/*Kategorier desktop*/
+.navbar-top, .kategorier, .navbar-bund {
+    display: none;
 }
 
+.kategorier2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+}
+
+.kategorier3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+}
+
+.kategorier4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.kategorier3 p, .kategorier3 a { 
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.kategori-item2 img {
+    max-width: 95%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.kategori-overskrift{
+    margin-left: 66px;
+    margin-top: 100px;
+    font-size: 40px;
+    color: var(--main-color);
+}
+
+.btn-chat2{
+    display: flex;
+    width: 150px;
+    height: 50px;
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background-color: var(--main-color);
+    font-size: 24px;
+    color: var(--txt-color-2);
+    position: absolute;
+    left: 870px; 
+    top: 700px;
+}
 }
