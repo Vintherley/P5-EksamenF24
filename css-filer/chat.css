@@ -130,7 +130,8 @@ body {
     .login-btn,
     .allerede-bruger, 
     .navbar,
-    .app-download-btn {
+    .app-download-btn, 
+    .img-elice {
         display: none;
     }
 
@@ -536,6 +537,15 @@ body {
 
     /*chat-Tanja*/
     /*chatbot Elice*/
+    .chatbot {
+        position: absolute;
+        right: 10px;
+        top: 85px; /* Juster denne værdi hvis din navbar har en bestemt højde */
+        margin: 0;
+        z-index: 1000; /* Sørger for at chatbotten er over andre elementer */
+        border:  1px solid var(--se-honeysuckle-orange);
+        border-radius: 3px;
+    }
     .chatbot header {
         background-color: var(--main-color);
         color: var(--txt-color-2);
@@ -553,6 +563,7 @@ body {
         height: 300px;
         overflow-y: auto;
         width: 400px;
+        
     }
 
     .chat {
@@ -622,21 +633,42 @@ body {
     }
 
     /*styling af desktop html*/
+    .app-download-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Horisontal centrering */
+        align-items: center; /* Vertikal centrering */
+        height: 100vh; /* Gør containeren fuld højde af vinduet */
+        
+    .img-d-btn{
+        display: flex; /* Placerer img-elice og app-download-div side om side */
+        justify-content: start; /* Centrerer indholdet horisontalt */
+        align-items: start; /* Centrerer indholdet vertikalt */
+        height: 100vh; /* Gør containeren fuld højde af vinduet */
+    }
     .app-download-btn{
-       display: grid;
+       display: flex;
         background-color: var(--main-color);
         text-decoration: none;
         color: var(--txt-color-2);
-        border-radius: 10px;
         text-align: center;
         padding: 20px;
         max-width: 100px;
         height: 30px;
+        align-content: center;
+        
+        
     }
+    .img-elice{
+        display: flex;
+        
+    }
+    
 
     .navbar-bund {
         display: none;
     }
+}
 }
 
 /*chat bot slut*/
