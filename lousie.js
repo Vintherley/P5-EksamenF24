@@ -42,6 +42,22 @@ function signUp(event) {
     // Nulstil formen
     document.getElementById('opbru').reset();
 
+    const arr = [
+        {name: 'Tanja'}, 
+        {name: 'Louise'}, 
+        {name: 'Lotte'},
+        {name:'Shirley'}];
+
+    for(let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+    }
+
+    // Log de brugere, der tilmeldes
+    console.log('Nuværende brugere:');
+    for(let i = 0; i < users.length; i++) {
+        console.log(users[i]);
+    }
+
     // Naviger til forsiden
     window.location.href = 'forside.html';
 }

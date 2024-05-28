@@ -1,12 +1,33 @@
+const data = [
+    { username: 'Admin', password: Schneider },
+    { username: 'Thomas', password: Hest },
+];
 
-document.querySelector('.login-btn').addEventListener('click', function() {
-    let username = document.querySelector('.brn-em').value;
-    let password = document.querySelector('.kodeord').value;
+function submitLogin(event) {
+    event.preventDefault();
 
-    if(username === 'Admin' && password === 'Schneider123') {
-        alert('Login successful!');
+    let username = document.getElementById('username').value;
+    let password = document.getElementById('password').value;
+
+    let userIsValidated = validateUser(username, password);
+
+    if (userIsValidated) {
+        window.location.assign('forside.html');
     } else {
-        alert('Invalid username or password!');
+        alert('Forkert kodeord');
     }
-});
+}
+
+function validateUser(username, password) {
+    let result = false;
+
+    data.forEach(element => {
+        if (element.username == username && password == element.password) {
+            result = true;
+        }
+    });
+    return result;
+}
+
+document.querySelector('form').addEventListener('submit', submitLogin);
 
