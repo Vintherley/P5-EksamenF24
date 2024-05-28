@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
         messageElement.classList.add(sender === 'bot' ? 'incoming' : 'outgoing');
 
         messageElement.innerHTML = sender === 'bot' 
-            ? `<span class="material-symbols-outlined"><img src="img/image%2013.png" class="bot-img" alt=""></span><p>${message}</p>` 
+            ? `<span class="material-symbols-outlined"><img src="img/image13.png" class="bot-img" alt=""></span><p>${message}</p>` 
             : `<p>${message}</p>`;
 
         chatBox.appendChild(messageElement);

@@ -128,7 +128,9 @@ body {
     .login-btn,
     .opretbruger-btn,
     .login-btn,
-    .allerede-bruger {
+    .allerede-bruger, 
+    .navbar,
+    .app-download-btn {
         display: none;
     }
 
@@ -280,6 +282,7 @@ body {
     padding: 10px;
     border-bottom: 1px solid var(--txt-color);
     text-align: center;
+    
 }
 
 .chatbox {
@@ -356,6 +359,10 @@ body {
 
 
 @media (min-width:900px) {
+    /*mobile css*/
+    .top-nav {
+        display: none;
+    }
 
     /*desktop navbar */
     .navbar {
@@ -365,6 +372,7 @@ body {
         background-color: var(--txt-color-2);
         border: 1px solid var(--main-color);
         padding: 25px 20px;
+        top: 100px
     }
 
     .nav-ul {
@@ -534,6 +542,8 @@ body {
         padding: 10px;
         border-bottom: 1px solid var(--txt-color);
         text-align: center;
+        width: 400px;
+
     }
 
     .chatbox {
@@ -542,12 +552,14 @@ body {
         margin: 0;
         height: 300px;
         overflow-y: auto;
+        width: 400px;
     }
 
     .chat {
         display: flex;
         align-items: flex-start;
         margin-bottom: 10px;
+        
     }
 
     .chat.incoming {
@@ -573,6 +585,7 @@ body {
         align-items: center;
         padding: 10px;
         border-top: 1px solid #ddd;
+        width: 400px;
     }
 
     .chat-input textarea {
@@ -581,6 +594,7 @@ body {
         height: 100px;
         border: none;
         resize: none;
+        
     }
 
     .input-icons {
@@ -605,6 +619,19 @@ body {
         height: 25px;
         width: 25px;
 
+    }
+
+    /*styling af desktop html*/
+    .app-download-btn{
+       display: grid;
+        background-color: var(--main-color);
+        text-decoration: none;
+        color: var(--txt-color-2);
+        border-radius: 10px;
+        text-align: center;
+        padding: 20px;
+        max-width: 100px;
+        height: 30px;
     }
 
     .navbar-bund {
