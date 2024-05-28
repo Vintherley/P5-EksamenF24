@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         { keywords: ["hjælp", "support"], response: "Hvilken slags hjælp har du brug for?" },
         { keywords: ["tak", "mange tak"], response: "Velbekomme! Er der andet, jeg kan hjælpe med?" },
         // Standard svar
-        { keywords: [], response: "Dette er et spørgsmål, som jeg ikke kan svare på. Jeg sender dig videre til en menneskelig kollega." }
+        { keywords: ["produkt"], response: "Dette er et spørgsmål, som jeg ikke kan svare på. Jeg sender dig videre til en menneskelig kollega." }
     ];
 
     // Funktion til at tilføje beskeder til chatboksen
