@@ -38,7 +38,3 @@ function addElements(step) {
 }
 
 steps.forEach(addElements);
-
-// for (let i = 0; i < steps.length; i++) {
-//     addElements( steps[i] );
-// }
