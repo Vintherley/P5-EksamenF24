@@ -37,6 +37,8 @@ function addElements(step) {
     stepsContainer.appendChild(image);
 }
 
-for (let i = 0; i < steps.length; i++) {
-    addElements(steps[i]);
-}
+steps.forEach(addElements);
+
+// for (let i = 0; i < steps.length; i++) {
+//     addElements( steps[i] );
+// }
