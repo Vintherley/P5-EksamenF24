@@ -137,6 +137,8 @@ body{
         background-color: var(--txt-color-2);
         border: 1px solid var(--support-color-1);
         padding: 25px 20px;
+        font-family: var(--font-family);
+        font-weight: bold;
         position: fixed; /* Fastgør navbaren til toppen */
         top: 0; /* Placerer navbaren øverst på siden */
         left: 0; /* Placerer navbaren til venstre på siden */
