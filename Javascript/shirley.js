@@ -1,6 +1,6 @@
 const data = [
-    { username: 'Admin', password: Schneider },
-    { username: 'Thomas', password: Hest },
+    { username: 'Admin', password: 'Schneider' },
+    { username: 'Thomas', password: 'Hest' },
 ];
 
 function submitLogin(event) {
