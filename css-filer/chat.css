@@ -131,7 +131,9 @@ body {
     .allerede-bruger, 
     .navbar,
     .app-download-btn, 
-    .img-elice {
+    .img-elice,
+    .desktop-chat-txt,
+    .title-chat {
         display: none;
     }
 

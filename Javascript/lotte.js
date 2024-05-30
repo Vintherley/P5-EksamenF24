@@ -15,7 +15,7 @@ let steps = [
 
 let stepsContainer = document.querySelector('.steps-container');
 
-steps.forEach((step) => {
+function addElements(step) {
     let headline = document.createElement('h2');
     let image = document.createElement('img');
     
@@ -35,4 +35,6 @@ steps.forEach((step) => {
 
     stepsContainer.appendChild(headline);
     stepsContainer.appendChild(image);
-});
+}
+
+steps.forEach(addElements);
