@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>log ind</title>
+    <title>Log ind</title>
     <link rel="stylesheet" href="css-filer/logind.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
-    <script src="Javascript/shirley.js"></script>
+    <script defer src="Javascript/shirley.js"></script>
 </head>
 
 <body>
@@ -23,17 +22,21 @@
         </div>
     </nav>
     <div class="login-body">
-        <p class="em">Brugernavn/Email</p>
-        <input type="email" class="brn-em">
-        <p class="kode">Kodeord</p>
-        <input type="text" class="kodeord">
-        <p class="glemt">Glemt kodeord?</p>
-
-        <a href="forside.html" class="login-btn">Log ind</a>
+        <form id="login-form">
+            <label for="username" class="em">Brugernavn/Email</label>
+            <input type="text" id="username" name="username" class="brn-em" required>
+            
+            <label for="password" class="kode">Kodeord</label>
+            <input type="password" id="password" name="password" class="kodeord" required>
+            
+            <a href="#" class="glemt">Glemt kodeord?</a>
+            
+            <button type="submit" class="login-btn">Log ind</button>
+        </form>
+        
         <p class="opret-bruger-med">Eller log ind med</p>
         <a href="#" class="opretside"><img src="img/Socialgoogle.png" class="some google" alt="Google icon">Google</a>
-        <a href="#" class="opretside"><img src="img/socialfacebook.svg" class="some facebook"
-                alt="facebook icon">Facebook</a>
+        <a href="#" class="opretside"><img src="img/socialfacebook.svg" class="some facebook" alt="facebook icon">Facebook</a>
     </div>
 </body>
 

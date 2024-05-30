@@ -19,15 +19,8 @@ function submitLogin(event) {
 }
 
 function validateUser(username, password) {
-    let result = false;
-
-    data.forEach(element => {
-        if (element.username == username && password == element.password) {
-            result = true;
-        }
-    });
-    return result;
+    return data.some(element => element.username === username && element.password === password);
 }
 
-document.querySelector('form').addEventListener('submit', submitLogin);
+document.getElementById('login-form').addEventListener('submit', submitLogin);
 
