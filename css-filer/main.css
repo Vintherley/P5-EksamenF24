@@ -247,7 +247,7 @@ a {
 }
 /* styling af installation slut */
 
-.navbar, .kategorier2, .btn-chat2{
+.navbar, .kategorier2, .btn-chat2, .kategori-overskrift{
     display: none;
 }
 
