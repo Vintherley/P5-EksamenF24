@@ -360,7 +360,7 @@ body {
 
 }
 
-
+/*desktop*/
 @media (min-width:900px) {
     /*mobile css*/
     .top-nav {
@@ -543,7 +543,7 @@ body {
         position: absolute;
         right: 10px;
         top: 85px; /* Juster denne værdi hvis din navbar har en bestemt højde */
-        margin: 0;
+        margin-right: 20px;
         z-index: 1000; /* Sørger for at chatbotten er over andre elementer */
         border:  1px solid var(--se-honeysuckle-orange);
         border-radius: 3px;
@@ -588,9 +588,6 @@ body {
         background-color: var(--support-color-2);
         color: var(--txt-color);
         border-radius: 10px;
-
-
-
     }
 
     .chat-input {
@@ -638,9 +635,10 @@ body {
     .app-download-div{
         display: flex;
         flex-direction: column;
-        justify-content: center; /* Horisontal centrering */
+        justify-content: space-evenly; /* Horisontal centrering */
         align-items: center; /* Vertikal centrering */
-        height: 100vh; /* Gør containeren fuld højde af vinduet */
+        margin-left: 50px;
+        height: 390px; /* Gør containeren fuld højde af vinduet */
         left: 50px;
        
     }
@@ -648,7 +646,6 @@ body {
         display: flex; /* Placerer img-elice og app-download-div side om side */
         justify-content: start; /* Centrerer indholdet horisontalt */
         align-items: start; /* Centrerer indholdet vertikalt */
-        height: 100vh; /* Gør containeren fuld højde af vinduet */
         margin-top: 100px;
         
     }
